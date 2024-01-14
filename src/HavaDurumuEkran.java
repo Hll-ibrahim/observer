@@ -5,6 +5,7 @@ public class HavaDurumuEkran implements Observer{
         this.sicaklik = sicaklik;
         display();
     }
+    @Override
     public void display(){
         System.out.println("Hava sıcaklığı : "+sicaklik);
     }

@@ -1,3 +1,4 @@
 public interface Observer {
-    void update(int sicaklik);
+    void update(int number);
+    void display();
 }

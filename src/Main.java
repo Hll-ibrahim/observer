@@ -9,5 +9,16 @@ public class Main {
         havaDurumuServisi.registerObserver(havaDurumuEkran2);
 
         havaDurumuServisi.setSicaklik(23);
+
+        System.out.println("---------------");
+
+        HaberAjansi haberAjansi = new HaberAjansi();
+        HaberEkrani haberEkrani1 = new HaberEkrani("A Spor");
+        HaberEkrani haberEkrani2 = new HaberEkrani("Haber Türk");
+
+        haberAjansi.registerObserver(haberEkrani1);
+        haberAjansi.registerObserver(haberEkrani2);
+
+        haberAjansi.setSale(29);
     }
 }
