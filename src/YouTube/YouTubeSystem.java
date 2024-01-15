@@ -9,6 +9,6 @@ public class YouTubeSystem {
         channel.registerSubscribe(user1);
         channel.registerSubscribe(user2);
 
-        channel.notifyNewVideo();
+        channel.notifyNewVideo("Java in 1 hour!");
     }
 }

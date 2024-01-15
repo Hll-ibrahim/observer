@@ -11,12 +11,7 @@ public class User implements Observer{
     }
     @Override
     public void update(String title) {
-        this.notificationTitle = title;
-        display();
+       System.out.println(name+" notified: "+title);
     }
 
-    @Override
-    public void display() {
-        System.out.println(notificationTitle);
-    }
 }

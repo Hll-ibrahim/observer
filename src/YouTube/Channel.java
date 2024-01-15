@@ -22,9 +22,9 @@ public class Channel implements Subject{
     }
 
     @Override
-    public void notifyNewVideo() {
+    public void notifyNewVideo(String title) {
         for(Observer observer : this.subscribers){
-            observer.update("Java in 1 hour!");
+            observer.update(title+"--"+channelName+"--");
         }
     }
 }
